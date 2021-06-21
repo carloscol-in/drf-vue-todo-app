@@ -54,3 +54,10 @@ class Task(TodoModel):
         default=False,
         help_text="This property is used to distinguish from completed tasks"
     )
+
+    completed_at = models.DateTimeField(
+        'Completed at',
+        null=True,
+        blank=True,
+        help_text="Date and time at which the taxt was completed"
+    )
