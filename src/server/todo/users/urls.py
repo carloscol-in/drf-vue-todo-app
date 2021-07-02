@@ -1,0 +1,18 @@
+"""Users urls"""
+
+# Django
+from django.urls import path, include
+
+# DRF
+from rest_framework.routers import DefaultRouter
+
+# Views
+from todo.users import views as user_views
+
+
+router = DefaultRouter()
+router.register(r'users', user_views.UserViewSet, basename='users')
+
+urlpatterns = [
+    path('', include(router.urls)),
+]
