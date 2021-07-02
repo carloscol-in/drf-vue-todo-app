@@ -1,1 +1,1 @@
-from .users import UserModelSerializer
+from .users import UserModelSerializer, UserSignupSerializer
