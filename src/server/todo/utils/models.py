@@ -6,23 +6,26 @@ from django.db import models
 
 
 class TodoModel(models.Model):
-    """Todo model."""
+    """Todo abstract model.
+    
+    All models in this project will inherit at least from this
+    model."""
 
     created = models.DateTimeField(
-        _('created at date'),
+        'Created at',
         auto_now_add=True,
-        help_text='Date time at which the object was created'
+        help_text="Date and time at which the task was created"
     )
     modified = models.DateTimeField(
-        _('modified at date'),
+        'Modified at',
         auto_now=True,
-        help_text='Date at which the object was modified for the last time'
+        help_text="Date and time at which the task was last modified"
     )
 
     class Meta:
-        """Meta options"""
+        """Meta option."""
 
-        abstract=True
+        abstract = True
 
-        get_latest_by='created'
-        ordering=('-created', '-modified')
+        get_latest_by = 'created'
+        ordering = ('-created', '-modified')
