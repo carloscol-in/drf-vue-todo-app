@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Local Apps
-    'todo.tasks.apps.TasksAppConfig'
+    'todo.tasks.apps.TasksAppConfig',
+    'todo.users.apps.UsersAppConfig',
 ]
 
 MIDDLEWARE = [
@@ -143,6 +144,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Auth
+AUTH_USER_MODEL = 'users.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
