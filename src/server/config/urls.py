@@ -28,5 +28,6 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name="token_refresh"),
 
     # Tasks
-    path('api/', include(('todo.tasks.urls', 'tasks')), name='tasks')
+    path('api/', include(('todo.tasks.urls', 'tasks')), name='tasks'),
+    path('api/', include(('todo.users.urls', 'users')), name='users')
 ]
