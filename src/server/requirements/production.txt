@@ -1,0 +1,4 @@
+# requirements/production.txt
+-r _base.txt
+
+# production dependencies
