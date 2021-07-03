@@ -1,3 +1,6 @@
+# requirements/_base.txt
+# base dependencies for project
+
 # Django
 django
 djangorestframework
