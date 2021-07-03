@@ -1,0 +1,4 @@
+# requirements/test.txt
+-r _base.txt
+
+# testing dependencies
