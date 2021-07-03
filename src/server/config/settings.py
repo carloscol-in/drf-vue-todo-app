@@ -146,6 +146,19 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Auth
 AUTH_USER_MODEL = 'users.User'
+AUTH_AUTHENTICATION_TYPE = 'both'
+# AUTHENTICATION_BACKENDS = (
+#     'todo.users.backends.EmailOrUsernameModelBackend',
+# )
+
+
+# Django REST Framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'todo.users.authentication.EmailOrUsernameAuthentication',
+    ]
+}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
