@@ -6,4 +6,4 @@
 
 > This applications uses `docker compose`, if you don't have it installed yet, visit the [Docker's official](https://docs.docker.com/compose/install/) documentation on how to install it.
 
-This application has two environments; local and production. Production compose file should be named in a way that makes it easy to docker-compose to run; `docker-compose.yml`.
+This application has two environments; development, testing and production. Production compose file should be named in a way that makes it easy to docker-compose to run; `docker-compose.yml`. 
