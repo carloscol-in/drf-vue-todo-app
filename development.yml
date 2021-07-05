@@ -4,5 +4,6 @@ services:
     build: 
       context: .
       dockerfile: ./compose/development/django/Dockerfile
+    command: "python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
