@@ -1,4 +1,13 @@
 # requirements/dev.txt
 -r _base.txt
 
-# development dependencies
+#####################################
+# List all development dependencies #
+#####################################
+
+# Django
+django-extensions
+bpython
+
+# Dummy text
+factory_boy
