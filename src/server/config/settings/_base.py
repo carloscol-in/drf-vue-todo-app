@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Third party
+    'django_extensions',
+
     # Local Apps
     'todo.tasks.apps.TasksAppConfig',
     'todo.users.apps.UsersAppConfig',
