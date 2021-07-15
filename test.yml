@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  django:
+    build: 
+      context: .
+      dockerfile: ./compose/development/django/Dockerfile
+    command: /start
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src/server:/code
+  db:
+    image: postgres
