@@ -1,10 +1,10 @@
 version: "3.8"
 services:
   django:
-    build: 
+    build:
       context: .
       dockerfile: ./compose/development/django/Dockerfile
-    command: "python manage.py runserver 0.0.0.0:8000"
+    command: /start
     ports:
       - "8000:8000"
     volumes:
